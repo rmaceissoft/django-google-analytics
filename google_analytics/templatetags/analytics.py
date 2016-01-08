@@ -7,7 +7,7 @@ from django.template import Context, loader
 
 
 register = template.Library()
-Analytics = models.get_model('googleanalytics', 'analytics')
+
 
 def do_get_analytics(parser, token):
     contents = token.split_contents()
